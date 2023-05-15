@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+int i, j, x, sueldo, ventamas4, ventaop, gxv, gxc, gxp, gxf, comision, v_totales, operador[7], precio[4];
+char vianda[20][4];
+main()
+{
+	do
+	{
+		printf ("Ingrese el numero del operador (entre 1 y 7): ");    //Ingreso el num. del operador
+		scanf ("%d", &operador[i]);
+ 		printf ("Ingrese su vienda: ");                              //Ingreso la vianda
+		scanf ("%s", &vianda[j]);
+		printf ("Ingrese el precio de la vianda: ");
+		scanf ("%d", &precio[x]);
+		
+		
+	} while (operador[i] != 0);
+	
+		if (ventaop > 4)                             //Comparo la cantidad de ventas, siendo si es mayor a cuanto al sueldo 
+		{                                            //le sumo el 3% correspondiente y creo un contador.
+			sueldo = sueldo + (sueldo*0.3);
+			ventamas4++;
+		}	
+	    
+			printf ("\nLa cantidad de ventas que fueron superiores a 4 unidades son %d\n", ventamas4);   //Muestro la cant. de ventas superiores a 4 unidades
+			
+			printf ("La ganacia por vegetales es de %d\n", gxv);     //Indico las ganacias por las unidades de las viandas
+			printf ("La ganacia por carne es de %d\n", gxc);
+			printf ("La ganacia por pescado es de %d\n", gxp);
+			printf ("La ganacia por fruta es de %d\n", gxf);
+			
+			printf ("El operador 1 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 2 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 3 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 4 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 5 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 6 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+			printf ("El operador 7 vendio: %d cantidad de viandas y la comision es de %d\n", operador[i], comision);
+}
